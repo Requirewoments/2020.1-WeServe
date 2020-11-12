@@ -4,3 +4,4 @@
 * [Requisitos do Projeto](requisitos.md)
 * [Backlog do Produto](product_backlog.md)
 * [Roadmap](roadmap.md)
+* [Documento de visão](vision-document.md)
