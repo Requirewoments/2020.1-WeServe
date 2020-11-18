@@ -29,6 +29,8 @@ O Plano de Gerenciamento de Requisitos é um elemento constituinte do plano de g
 
 [4] SWEBOK. Guide to the Software Engineering Body of Knowledge. 2004 Version. project of the IEEE Computer Society Professional Practices Committee. Disponível em: . Acesso em: 15 de Novembro de 2020. 
 
+[5] VENTURA,Plínio. **Priorização de Requisitos**, disponível em: <https://www.ateomomento.com.br/priorizacao-de-requisitos/#:~:text=Em%20termos%20de%20m%C3%A9todo%20aplicado,v%C3%A3o%20sendo%20constru%C3%ADdos%20no%20sistema.>. Acesso em 18/11/2020 às 15:30.
+
 ## 4.Ferramentas
 As ferramentas utilizadas para gerenciar os requisitos no presente projeto foram escolhidas de modo a serem flexíveis e se encaixarem no ciclo de vida do projeto. De acordo com o Guia PMBOK [1]: “O escopo geral de um projeto adaptativo pode ser desmembrado em um conjunto de requisitos e trabalhos a serem executados, comumente chamado de backlog do produto”, logo foi escolhido o Backlog do produto, que reflete e está ligado diretamente ao escopo do projeto. No Backlog e nas sprints, encontra-se uma quantidade considerável de informações e histórias de usuário. Visando a transparência por todos e gerenciamento desses dados foi escolhido o ZenHub.
 
@@ -74,7 +76,21 @@ Para cada mudança de requisitos - seja alteração, exclusão ou modificação 
 Por fim, as mudanças são documentadas no documento de requisitos respeitando o versionamento e os critérios (específico, claro e conciso, fazível, necessário, inteligível e testável, preciso).
 
 ## 6.Processo de priorização dos requisitos
-### 6.1.Priorizar requisitos
+O processo de criação de um software envolve vários subsistemas a serem implementados, artefatos a serem gerados, entre outros. Tendo isso em vista, apenas implementação dos requisitos sem qualquer ordem definida pode gerar complicações à equipe e consequentemente a entrega final do produto. Além disso os recursos de uma equipe - recursos humanos, tempo, dinheiro - são limitados e direcionar errôneamente esses recursos também podem gerar complicações. 
+
+Os requisitos então têm que ser ordenados de modo que possa destinar mais recursos para aqueles que tem uma prioridade maior. Para isso será definido um atributo que será relacionado a cada requisito e com isso a priorização poderá ser feita com maior embasamento.
+
+Esses atributos que são definidos a seguir se tratam da relevância do requisito para o projeto em si, seja por remover dependencias, ou por ser mais relevante para a entrega final. 
+
+### 6.1. Essencial:
+É um requisito que é fundamental ou impede a implantação do sistema e que sem ele não é possível definir o sistema como finalizado ou pronto. Sobre eles não é possível implementar soluções de contorno.
+
+### 6.2. Importante:
+É um requisito que deve estar no sistema, mas a sua falta não impede a finalização do sistema. Pode ocorrer de virar débito técnico, pois é algo que faz parte do escopo do projeto que não foi implementado no sistema final. Em resumo, é necessário a sua presença no projeto, mas a sua falta não impede o funcionamento.
+
+### 6.3. Desejável:
+É um requisito que não é indispensável e que o sistema funcione de maneira adequada e que, além disso, mesmo que adiado, não deverá ser feito obrigatoriamente.
+
 <table>
     <tr>
         <th>Data</th>
@@ -95,5 +111,11 @@ Por fim, as mudanças são documentadas no documento de requisitos respeitando o
         <td>
         Maicon Mares
         </td>
+    </tr>
+    <tr>
+        <td>18/11/2020</td>
+        <td>1.1</td>
+        <td>Definição do processo de priorização de requisitos</td>
+        <td>João Pedro Silva de Carvalho</td>
     </tr>
 </table>
