@@ -7,12 +7,12 @@
   <body>
     <h1><%= title %></h1>
     <ul>
-      <% docs.forEach(function(customer){ %>
+      <% docs.forEach(function(services){ %>
         <li>
-          <a href="/edit/<%= customer._id %>">
-            <%= customer.nome %>
+          <a href="/edit/<%= services._id %>">
+            <%= services.nome %>
           </a>
-          <a href="/delete/<%= customer._id %>" 
+          <a href="/delete/<%= services._id %>" 
             onclick="return confirm('Tem certeza que deseja excluir?');">
             X
           </a>
