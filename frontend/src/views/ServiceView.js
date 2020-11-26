@@ -9,7 +9,7 @@ class ServiceView extends Component {
     render() {
         return (
         <ScrollView style={styles.container}>
-            <Text>servisso</Text> 
+            <Text>serviço</Text> 
         </ScrollView>
         )
     }
