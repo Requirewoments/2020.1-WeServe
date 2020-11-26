@@ -5,18 +5,20 @@ var router = express.Router();
 router.get('/', function(req, res) {
   global.db.findAll((e, docs) => {
       if(e) { return console.log(e); }
-      res.render('index', { title: 'Lista de Clientes', docs: docs });
+      res.render('index', { title: 'Lista de Servicos', docs: docs });
   })
 })
 
 router.get('/new', function(req, res, next) {
-  res.render('new', { title: 'Novo Cadastro De Servico', doc: {"nome":"","servico":""}, action: '/new' });
+  res.render('new', { title: 'Novo Cadastro De Servico', doc: {"titulo":"","nome":"","servico":"","descricao":""}, action: '/new' });
 });
 
 router.post('/new', function(req, res) {
+  var titulo = req.body.titulo
   var nome = req.body.nome;
   var servico = req.body.servico;
-  global.db.insertOne({nome, servico}, (err, result) => {
+  var descricao = req.body.descricao
+  global.db.insert({titulo,nome, servico,descricao}, (err, result) => {
           if(err) { return console.log(err); }
           res.redirect('/');
       })
@@ -24,9 +26,11 @@ router.post('/new', function(req, res) {
 
 router.post('/edit/:id', function(req, res) {
   var id = req.params.id;
+  var titulo = req.body.titulo
   var nome = req.body.nome;
-  var servico = req.body.idade;
-  global.db.update(id, {nome, servico}, (e, result) => {
+  var servico = req.body.servico;
+  var descricao = req.body.descricao
+  global.db.update(id, {titulo,nome, servico,descricao}, (e, result) => {
         if(e) { return console.log(e); }
         res.redirect('/');
     });

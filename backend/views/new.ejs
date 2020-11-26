@@ -7,8 +7,10 @@
   <body>
     <h1><%= title %></h1>
     <form action="<%= action %>" method="POST">
+        <p>Titulo:<input type="text" name="titulo" value="<%= doc.titulo %>" /></p>
         <p>Nome:<input type="text" name="nome" value="<%= doc.nome %>" /></p>
         <p>Servico:<input type="text" name="servico" value="<%= doc.servico %>" /></p>
+        <p>Descricao:<input type="text" name="descricao" value="<%= doc.descricao %>" /></p>
         <input type="submit" value="Salvar" />
       </form>
   </body>
